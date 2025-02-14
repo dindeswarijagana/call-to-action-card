@@ -3,21 +3,23 @@
   <head>
     <title>call-to-action card</title>
     <style>
-      .main-div-block {
-        width: 550px;
-        height: 450px;
-        margin: 100px auto;
-        border: 1px black solid;
-        padding: 50px;
-        box-sizing: border-box;
+      * {
+        margin: 60px auto;
+      }
+      section {
+        width: 500px;
+        border: 1px rgba(0, 0, 0, 0.2) solid;
+        padding: 28px;
+      }
+      section > * {
+        margin: 30px;
       }
       h1 {
         font-family: sans-serif;
         font-size: 42px;
-        color: dimgray;
         font-weight: 100;
-        margin-top: 1px;
-        color: rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 10px;
       }
       #line {
         width: 60px;
@@ -28,44 +30,39 @@
         font-family: sans-serif;
         color: rgba(0, 0, 0, 0.5);
         font-size: 20px;
-        line-height: 28px;
+        line-height: 26px;
+        word-spacing: 3px;
       }
-      /* .sub-div-block {
-        border: 1px solid #4184e1;
-        height: 50px;
-        width: 400px;
-        border-radius: 60px;
-        background-color: #4184e1;
-      } */
-      #button {
+      a {
         text-align: center;
         color: white;
         background-color: #4184e1;
-        padding: 8px;
+        padding: 14px;
         border-radius: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 80%;
+        display: block;
       }
-      #last-para {
+      #tnc {
         font-size: 16px;
-        margin-top: 30px;
         line-height: 18px;
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="main-div-block">
-        <h1>Build your first chatbot in 10 minutes!</h1>
-        <p id="line"></p>
-        <p>
-          Have a bot answering questions from customers on your website within
-          10 minutes of signing up for chatBot.
-        </p>
-        <p id="button">TRY NOW &rightarrow;</p>
-        <p id="last-para">
-          By clicking try now you create an account and agree to our Terms and
-          conditions and Privacy Policy
-        </p>
-      </div>
-    </main>
+    <section>
+      <h1>Build your first chatbot in 10 minutes!</h1>
+      <p id="line"></p>
+      <p>
+        Have a bot answering questions from customers on your website within 10
+        minutes of signing up for ChatBot.
+      </p>
+      <a href="#">try now &rarr;</a>
+      <p id="tnc">
+        By clicking try now you create an account and agree to our Terms and
+        conditions and Privacy Policy
+      </p>
+    </section>
   </body>
 </html>
